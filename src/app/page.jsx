@@ -147,15 +147,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-about bg-fixed'>
+      <section
+        className='bg-cover bg-center bg-fixed'
+        style={{
+          backgroundImage:
+            'linear-gradient(rgba(36, 10, 23, 0.5), rgba(0, 0, 0, 0.85)), url("/assets/apwen-activity.jpeg")',
+        }}>
         <div className='px-6 py-12 min-[576px]:w-[510px] min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:py-[100px]'>
           <h2 className='text-h2 text-purple-96 mb-4'>
             About <span className='text-purple-92/50'>Us</span>
           </h2>
           <p className='text-md-160 text-purple-98 mx-5'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
