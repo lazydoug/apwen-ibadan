@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <main className='bg-purple-98 overflow-x-clip'>
-      <section className='px-6 pt-12 pb-8 flex flex-col gap-8'>
+      <section className='px-6 pt-12 pb-8 md:px-12 lg:px-40 lg:py-[100px] flex flex-col gap-8'>
         <div>
           <h1 className='text-h2 text-secondary text-center mb-5'>
             The Association Of Professional Women Engineers of Nigeria (APWEN)
@@ -34,7 +34,8 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className='px-6 py-12 md: lg:px-40 lg:py-[100px]'>
+
+      <section className='px-6 py-12 min-[576px]:w-[510px] min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:py-[100px]'>
         <div className='mb-8 lg:mb-[50px]'>
           <h2 className='text-h2 text-secondary'>
             What’s <span className='text-secondary/20'>New?</span>
@@ -44,100 +45,128 @@ export default function Home() {
           </p>
         </div>
 
-        <div className='flex flex-col items-center gap-6 md:flex-row md:flex-wrap md:justify-center lg:gap-12'>
-          {whatsNew.map(() => (
-            <VerticalCard key={''} />
-          ))}
-        </div>
-
-        <Link
-          className='block py-4 w-full lg:w-[327px] lg:mx-auto bg-primary text-md-150 text-white text-center font-bold rounded-lg mt-8 lg:mt-16'
-          href='/news'>
-          View more
-        </Link>
-      </section>
-      <section className='px-6 py-12 lg:px-40 lg:py-[100px]'>
-        <h2 className='text-h2 text-secondary mb-8'>
-          <span className='text-secondary/20'>Upcoming </span>
-          <span className='block -mt-[23px]'>Events</span>
-        </h2>
-
-        <div className='w-full px-5 pt-8 pb-12 lg:p-[100px] bg-purple-90 rounded-lg'>
-          <div className='flex gap-3 items-center mb-3'>
-            <Calendar color='rgb(104 4 55 / 0.5)' />
-            <span className='text-lg font-bold text-secondary/50'>
-              Spetember 1, 2024
-            </span>
+        <div className='min-[426px]:px-5'>
+          <div className='grid gap-6 md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-10'>
+            {whatsNew.map(() => (
+              <VerticalCard key={''} />
+            ))}
           </div>
 
-          <Link href='/event-name'>
-            <h3 className='text-h3 text-secondary hover:text-primary mb-5'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-            </h3>
+          <Link
+            className='block py-4 w-full bg-primary text-md-150 text-white text-center font-bold rounded-lg mt-12 min-[576px]:w-[327px] min-[576px]:mx-auto min-[576px]:mt-16'
+            href='/news'>
+            View more
           </Link>
+        </div>
+      </section>
 
-          <p className='text-md-160 text-black/60 font-medium mb-4'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
-          </p>
+      <section className='px-6 py-12 min-[576px]:w-[510px] min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:py-[100px]'>
+        <h2 className='text-h2 text-secondary mb-8 min-[1440px]:text-h1 min-[1440px]:mb-12'>
+          <span className='text-secondary/20'>Upcoming </span>
+          <span className='block -mt-[23px] min-[1440px]:-mt-4'>Events</span>
+        </h2>
 
-          <div className='relative w-full h-[360px]'>
-            <Image
-              className='rounded-lg'
-              src='/assets/placeholder.png'
-              alt='Event banner image'
-              fill
-            />
+        <div className='min-[426px]:mx-5'>
+          <div className='relative px-5 pt-8 pb-12 bg-purple-90 rounded-lg lg:p-[100px] min-[1440px]:pr-12'>
+            <div className='flex flex-col gap-8 min-[1440px]:flex-row'>
+              <div>
+                <div className='flex gap-3 items-center mb-3 min-[1440px]:mb-8'>
+                  <Calendar color='rgb(104 4 55 / 0.5)' />
+                  <span className='text-lg font-bold text-secondary/50'>
+                    September 1, 2024
+                  </span>
+                </div>
 
-            <div className='w-full px-2 text-grey-500/10 flex justify-between absolute -bottom-9 z-10'>
-              <div className='flex flex-col items-center'>
-                <span className='text-h2'>05</span>
-                <span className='text-xl-160 font-bold'>Days</span>
+                <Link
+                  className='block mb-5 min-[1440px]:mb-12'
+                  href={'/event-name'}>
+                  <h3 className='text-h3 text-secondary hover:text-primary min-[1440px]:text-h2'>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting
+                  </h3>
+                </Link>
+
+                <p className='text-xl-160 text-black/60 font-medium'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla.
+                </p>
               </div>
-              <div className='flex flex-col items-center'>
-                <span className='text-h2'>20</span>
-                <span className='text-xl-160 font-bold'>Hours</span>
-              </div>
-              <div className='flex flex-col items-center'>
-                <span className='text-h2'>10</span>
-                <span className='text-xl-160 font-bold'>Mins</span>
-              </div>
-              <div className='flex flex-col items-center'>
-                <span className='text-h2'>00</span>
-                <span className='text-xl-160 font-bold'>Secs</span>
+
+              {/**Thumbnail */}
+              <div className='relative min-[1440px]:-top-[195px]'>
+                <div className='relative w-full h-[360px] min-[1440px]:w-[470px] min-[1440px]:h-[512px]'>
+                  <Image
+                    className='rounded-lg z-10'
+                    // className='rounded-lg object-cover'
+                    src='/assets/placeholder.png'
+                    alt='Event banner image'
+                    fill
+                  />
+                  <div className='w-[470px] h-[512px] absolute bg-purple-92 left-1 top-1 rounded-lg max-[1440px]:hidden'></div>
+
+                  {/**Countdown */}
+                  <div className='w-full max-w-80 px-2 text-grey-500/10 flex justify-between absolute -bottom-9 left-1/2 -translate-x-1/2 z-10 max-[320px]:hidden'>
+                    <div className='flex flex-col items-center'>
+                      <span className='text-h2'>05</span>
+                      <span className='text-xl-160 font-bold'>Days</span>
+                    </div>
+                    <div className='flex flex-col items-center'>
+                      <span className='text-h2'>20</span>
+                      <span className='text-xl-160 font-bold'>Hours</span>
+                    </div>
+                    <div className='flex flex-col items-center'>
+                      <span className='text-h2'>10</span>
+                      <span className='text-xl-160 font-bold'>Mins</span>
+                    </div>
+                    <div className='flex flex-col items-center'>
+                      <span className='text-h2'>00</span>
+                      <span className='text-xl-160 font-bold'>Secs</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <Link
-          className='block lg:hidden py-4 w-full bg-primary text-md-150 text-white text-center font-bold rounded-lg mt-8'
-          href='/events'>
-          View more
-        </Link>
+            <Link
+              className='absolute right-12 bottom-[100px] text-md-150 text-secondary font-bold max-[1440px]:hidden'
+              href='/events'>
+              View more
+              <hr className='w-[30px] border-[3px] border-white mt-1' />
+            </Link>
+          </div>
+
+          <Link
+            className='block min-[1440px]:hidden py-4 w-full bg-primary text-md-150 text-white text-center font-bold rounded-lg mt-8 min-[576px]:w-[327px] min-[576px]:mx-auto'
+            href='/events'>
+            View more
+          </Link>
+        </div>
       </section>
 
-      <section className='px-6 py-12 bg-about bg-fixed'>
-        <h2 className='text-h2 text-purple-96 mb-4'>
-          About <span className='text-purple-92/50'>Us</span>
-        </h2>
-        <p className='text-md-160 text-purple-98/50 mb-7'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <Link
-          className='block py-4 bg-primary text-md-150 text-white text-center font-bold rounded-lg'
-          href='/about'>
-          Read more
-        </Link>
+      <section className='bg-about bg-fixed'>
+        <div className='px-6 py-12 min-[576px]:w-[510px] min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:py-[100px]'>
+          <h2 className='text-h2 text-purple-96 mb-4'>
+            About <span className='text-purple-92/50'>Us</span>
+          </h2>
+          <p className='text-md-160 text-purple-98 mx-5'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <Link
+            className='block py-4 bg-primary text-md-150 text-white text-center font-bold rounded-lg mt-8 min-[576px]:w-[327px] min-[576px]:mx-auto'
+            href='/about'>
+            Read more
+          </Link>
+        </div>
       </section>
 
       <Newsletter />

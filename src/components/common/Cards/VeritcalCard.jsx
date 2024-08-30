@@ -23,9 +23,9 @@ const VerticalCard = ({ date, image, text }) => {
   image || (image = '/assets/placeholder.png')
 
   return (
-    <div className='max-w-[327px] rounded-lg overflow-clip'>
+    <div className='w-full rounded-lg overflow-clip'>
       <div
-        className='w-full h-[230px] '
+        className='w-full h-80 '
         style={{ backgroundImage: `url('${image}')` }}></div>
       <div className='w-full p-5 bg-white'>
         <div className='flex flex-row gap-[10px] items-center mb-[10px]'>
