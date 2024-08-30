@@ -1,0 +1,47 @@
+const VerticalCard = ({ date, image, text }) => {
+  const currentDate = new Date(Date.now())
+
+  const month = currentDate.toLocaleDateString('en-GB', {
+    month: 'long',
+  })
+
+  const ordinalDate = (function (d) {
+    if (d > 3 && d < 21) return `${d}th`
+
+    switch (d % 10) {
+      case 1:
+        return `${d}st`
+      case 2:
+        return `${d}nd`
+      case 3:
+        return `${d}rd`
+      default:
+        return `${d}th`
+    }
+  })(currentDate.getDate())
+
+  image || (image = '/assets/placeholder.png')
+
+  return (
+    <div className='w-full rounded-lg overflow-clip'>
+      <div
+        className='w-full h-80 '
+        style={{ backgroundImage: `url('${image}')` }}></div>
+      <div className='w-full p-5 bg-white'>
+        <div className='flex flex-row gap-[10px] items-center mb-[10px]'>
+          <span className='w-1 h-1 bg-grey-500 rounded-full'></span>
+          <p className='text-md-150 text-grey-400 font-medium'>
+            {date || `${ordinalDate} ${month}`}
+          </p>
+        </div>
+
+        <p className='text-black text-xl-160 font-bold line-clamp-3'>
+          {text ||
+            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'}
+        </p>
+      </div>
+    </div>
+  )
+}
+
+export default VerticalCard
