@@ -15,9 +15,9 @@ const Newsletter = () => {
           </p>
         </div>
   
-        <form action='' className='flex gap-[10px]'>
+        <form action='' className='flex gap-[10px] max-[375px]:flex-col'>
           <input
-            className='w-1/2 min-w-max p-4 rounded-lg text-secondary placeholder:text-sm placeholder:text-secondary placeholder:font-medium focus:outline-none focus:border focus:border-secondary'
+            className='w-1/2 min-w-max p-4 rounded-lg text-secondary placeholder:text-sm placeholder:text-secondary placeholder:font-medium focus:outline-none focus:border focus:border-secondary max-[576px]:w-full'
             type='email'
             placeholder='Enter your email'
           />

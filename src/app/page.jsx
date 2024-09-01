@@ -11,7 +11,7 @@ export default function Home() {
   const whatsNew = ['', '', '', '', '', '']
 
   return (
-    <main className='bg-purple-98 overflow-x-clip'>
+    <main className='bg-purple-98'>
       {/* <section className='px-6 pt-12 pb-8 md:px-12 lg:px-40 lg:py-[100px] flex flex-col gap-8'>
         <div className='flex flex-col gap-8 lg:flex-row '>
           <div className='flex-grow'>
