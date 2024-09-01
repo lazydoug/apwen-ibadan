@@ -45,7 +45,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className='px-6 pb-12 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:pb-[100px]'>
+      <section className='px-6 pb-12 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:pb-[100px]'>
         <p className='text-xl-140 text-secondary/50 font-bold mb-2 lg:text-h4 lg:mb-4'>
           WHAT WE STAND FOR
         </p>

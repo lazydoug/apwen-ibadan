@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={`${plusJakartaSans.className} bg-purple-98`}>
+      <body className={`${plusJakartaSans.className} bg-purple-98 min-w-80`}>
         <header>
           <NavBar />
         </header>
