@@ -3,7 +3,7 @@ import { Send } from './Icons'
 const Newsletter = () => {
   return (
     <section className='bg-newsletter'>
-      <div className='px-6 py-[100px] min-[576px]:w-[510px] min-[576px]:mx-auto md:w-full md:px-12 lg:px-40'>
+      <div className='px-6 py-[100px] min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40'>
         <div className='mb-[50px]'>
           <span className='flex gap-[10px]'>
             <Send />
