@@ -34,6 +34,7 @@ const HorizontalCard = ({ date, image, text, readTime }) => {
           style={{ backgroundImage: `url('${image}')` }}></div>
         <div className='w-[120px] h-[120px] absolute bg-purple-94 left-1 top-1 rounded-lg'></div>
       </div>
+      
       <div>
         <p className='text-black text-md-150 font-bold line-clamp-2 mb-4'>
           {text ||

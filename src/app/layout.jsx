@@ -1,6 +1,7 @@
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 
+import NavBar from '@/components/common/NavBar'
 import Footer from '@/components/Footer'
 
 const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'] })
@@ -15,6 +16,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={`${plusJakartaSans.className} bg-purple-98`}>
+        <header>
+          <NavBar />
+        </header>
         {children}
         <Footer />
       </body>
