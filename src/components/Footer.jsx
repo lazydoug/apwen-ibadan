@@ -3,7 +3,7 @@ import { Facebook, Instagram, LinkedIn, X_Twitter } from './common/Icons'
 
 const Footer = () => {
   return (
-    <footer className='py-12 lg:pb-8 lg:pt-[100px] bg-white'>
+    <footer className='px-6 py-12 lg:pb-8 lg:pt-[100px] bg-white'>
       <div className='min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:mx-auto min-[576px]:flex min-[576px]:justify-between min-[576px]:items-start md:w-full md:px-12 lg:px-40'>
         <div className='max-w-64 mb-7 md:max-w-[288px] min-[576px]:mb-0'>
           <p className='text-lg text-secondary font-bold mb-2'>APWEN Ibadan</p>

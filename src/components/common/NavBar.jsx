@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useRef, useState } from 'react'
 
 const NavBar = () => {
-  const [menuVisibility, setMenuVisibility] = useState(false)
+  const [menuVisibility, setMenuVisibility] = useState('hidden')
   const mobileMenu = useRef()
 
   const handleMenuClick = () => {
