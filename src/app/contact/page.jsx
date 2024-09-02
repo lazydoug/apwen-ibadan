@@ -6,7 +6,9 @@ const ContactPage = () => {
       <section className='px-6 py-12 bg-purple-94 md:px-12 lg:px-40 lg:py-[100px]'>
         <div className='flex flex-col gap-12 min-[1120px]:flex-row min-[1120px]:items-center'>
           <div className='lg:flex-1'>
-            <h1 className='text-h2 text-black mb-3 lg:text-h1 lg:mb-6'>Contact Us</h1>
+            <h1 className='text-h2 text-black mb-3 lg:text-h1 lg:mb-6'>
+              Contact Us
+            </h1>
             <div className='flex flex-col gap-4 mb-12 lg:gap-[18px]'>
               <p className='text-md-160 text-black lg:text-xl-160'>
                 Email, call or complete the form to lorem ipsum dolor sit amet,
@@ -101,15 +103,20 @@ const ContactPage = () => {
             <p className='text-md-150 text-secondary/50 font-bold mb-2 lg:text-h4 lg:mb-4'>
               OUR LOCATION
             </p>
-            <h2 className='text-h4 text-secondary lg:text-h2'>Connecting Near and Far</h2>
+            <h2 className='text-h4 text-secondary lg:text-h2'>
+              Connecting Near and Far
+            </h2>
           </div>
-  
+
           <div className='mb-12'>
-            <p className='text-lg text-black font-bold mb-1 lg:text-xl-140 lg:mb-2'>Main Office</p>
+            <p className='text-lg text-black font-bold mb-1 lg:text-xl-140 lg:mb-2'>
+              Main Office
+            </p>
             <p className='text-md-160 text-black lg:text-xl-160'>
-              Ibadan, Oyo State. <br />
-              24, Lorem ipsum, <br />
-              adipiscing elit, <br /> Nigeria.
+              Ifedayo Akintunde House, <br />
+              NSE Secretariat, <br />
+              General Gas Iyana Church Road, <br />
+              Akobo, Ibadan.
             </p>
           </div>
         </div>

@@ -8,9 +8,10 @@ const Footer = () => {
         <div className='max-w-64 mb-7 md:max-w-[288px] min-[576px]:mb-0'>
           <p className='text-lg text-secondary font-bold mb-2'>APWEN Ibadan</p>
           <p className='text-md-160 text-black'>
-            Ibadan, <br />
-            Oyo State, <br />
-            Nigeria.
+            Ifedayo Akintunde House, <br />
+            NSE Secretariat, <br />
+            General Gas Iyana Church Road, <br />
+            Akobo, Ibadan.
           </p>
         </div>
 
@@ -22,9 +23,9 @@ const Footer = () => {
             <li>
               <Link href='/about'>About Us</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href='/projects'>Projects</Link>
-            </li>
+            </li> */}
             <li>
               <Link href='/news'>News</Link>
             </li>
