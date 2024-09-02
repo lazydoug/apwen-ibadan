@@ -1,4 +1,4 @@
-const VerticalCard = ({ date, image, text }) => {
+const VerticalCard = ({ date, image, title }) => {
   const currentDate = new Date(Date.now())
 
   const month = currentDate.toLocaleDateString('en-GB', {
@@ -35,8 +35,8 @@ const VerticalCard = ({ date, image, text }) => {
           </p>
         </div>
 
-        <p className='text-black text-xl-160 font-bold line-clamp-3'>
-          {text ||
+        <p className='h-24 text-black text-xl-160 font-bold line-clamp-3'>
+          {title ||
             'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'}
         </p>
       </div>

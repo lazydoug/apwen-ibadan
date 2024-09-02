@@ -6,9 +6,11 @@ import VerticalCard from '@/components/common/Cards/VeritcalCard'
 import { Calendar } from '@/components/common/Icons'
 import Newsletter from '@/components/common/Newsletter'
 
+import eventsData from './data/events'
+import heroData from './data/hero'
+
 export default function Home() {
   const recents = ['', '', '']
-  const whatsNew = ['', '', '', '', '', '']
 
   return (
     <main className='bg-purple-98'>
@@ -45,21 +47,25 @@ export default function Home() {
               The Association Of Professional Women Engineers of Nigeria (APWEN)
             </h1>
             <p className='text-xl-160 text-black font-medium text-center lg:text-left'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              A division of the Nigerian Society of Engineers.
             </p>
           </div>
 
-          {/** Hero Image */}
+          {/* Hero Image */}
           {/* <div className='relative w-full h-[331px] rounded-lg overflow-clip lg:h-[594px] lg:flex-1'> */}
           <div className='relative w-full h-[327px] rounded-lg overflow-clip lg:w-[40vw] lg:h-[40vw] lg:-mr-28'>
-            <Image src='/assets/placeholder.png' alt='' fill />
+            <Image
+              className='object-cover'
+              src='/assets/event-banner.jpeg'
+              alt=''
+              fill
+            />
           </div>
         </div>
 
-        <div className='flex gap-6 overflow-x-auto lg:overflow-visible'>
-          {recents.map(() => (
-            <HorizontalCard key={''} />
+        <div className='h-32 flex gap-6 justify-between overflow-x-auto snap-x snap-mandatory'>
+          {heroData.map(({ title, date }) => (
+            <HorizontalCard key={title} title={title} date={date} />
           ))}
         </div>
       </section>
@@ -76,8 +82,8 @@ export default function Home() {
 
         <div>
           <div className='grid gap-6 md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-10'>
-            {whatsNew.map(() => (
-              <VerticalCard key={''} />
+            {eventsData.map(({ title, date }) => (
+              <VerticalCard key={title} title={title} date={date} />
             ))}
           </div>
 
@@ -102,26 +108,18 @@ export default function Home() {
                 <div className='flex gap-3 items-center mb-3 min-[1440px]:mb-8'>
                   <Calendar color='rgb(104 4 55 / 0.5)' />
                   <span className='text-lg font-bold text-secondary/50'>
-                    September 1, 2024
+                    {eventsData[4].date}
                   </span>
                 </div>
 
-                <Link
-                  className='block mb-5 min-[1440px]:mb-12'
-                  href={'/event-name'}>
+                <Link className='block mb-5 min-[1440px]:mb-12' href={'#'}>
                   <h3 className='text-h3 text-secondary hover:text-primary min-[1440px]:text-h2'>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting
+                    {eventsData[4].title}
                   </h3>
                 </Link>
 
                 <p className='text-xl-160 text-black/60 font-medium'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla.
+                  {eventsData[4].details}
                 </p>
               </div>
 
@@ -129,9 +127,8 @@ export default function Home() {
               <div className='relative min-[1440px]:-top-[195px]'>
                 <div className='relative w-full h-[360px] min-[1440px]:w-[470px] min-[1440px]:h-[512px]'>
                   <Image
-                    className='rounded-lg z-10'
-                    // className='rounded-lg object-cover'
-                    src='/assets/placeholder.png'
+                    className='rounded-lg z-10 object-cover'
+                    src='/assets/event-banner.jpeg'
                     alt='Event banner image'
                     fill
                   />
@@ -189,13 +186,13 @@ export default function Home() {
             About <span className='text-purple-92/50'>Us</span>
           </h2>
           <p className='text-md-160 text-purple-98 mx-5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            The Association of Professional Women Engineers of Nigeria (APWEN)
+            was formed by a handful of women engineers led by Engr. (Mrs.) J. O.
+            Maduka in 1982 and was formally inaugurated in 1983. It was
+            originally meant to be a pressure group since most men hiring
+            engineers then would rather have women in the kitchen and not on
+            construction sites or behind the desk carrying out engineering
+            designs.
           </p>
           <Link
             className='block py-4 bg-primary text-md-150 text-white text-center font-bold rounded-lg mt-8 min-[576px]:w-[327px] min-[576px]:mx-auto'
