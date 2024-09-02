@@ -36,11 +36,11 @@ const HorizontalCard = ({ date, image, title, readTime }) => {
       </div>
 
       <div>
-        <p className='text-black text-md-150 font-bold line-clamp-2 mb-4'>
+        <p className='text-black text-md-150 font-bold line-clamp-2 mb-4 text-wrap'>
           {title ||
             'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'}
         </p>
-        <div className='flex flex-row gap-[10px] items-center w-max'>
+        <div className='flex flex-row gap-[10px] items-center'>
           <p className='text-xs text-grey-400 font-medium'>
             {date || `${ordinalDate} ${monthYear}`}
           </p>

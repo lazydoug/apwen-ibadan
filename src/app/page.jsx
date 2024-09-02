@@ -40,58 +40,69 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className='px-6 pt-12 pb-8 md:px-12 lg:px-40 lg:py-[100px] flex flex-col gap-8 lg:gap-12'>
-        <div className='flex flex-col gap-8 lg:flex-row lg:items-center'>
-          <div className='lg:flex-1'>
-            <h1 className='text-h2 text-secondary text-center mb-5 lg:mb-8 lg:text-left min-[1210px]:text-h1'>
-              The Association Of Professional Women Engineers of Nigeria (APWEN)
-            </h1>
-            <p className='text-xl-160 text-black font-medium text-center lg:text-left'>
-              A division of the Nigerian Society of Engineers.
-            </p>
-          </div>
+      <section className='relative  '>
+        {/* Card Background */}
+        <div className='absolute top-0 right-0 min-w-[278px] min-h-[440px] max-w-[500px] max-h-[730px] bg-purple-96 md:w-[35vw] md:h-[35vw]'></div>
+        {/*  */}
+        <div className='px-6 pt-12 pb-8 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:py-[100px] flex flex-col gap-8 lg:gap-12'>
+          <div className='z-10 flex flex-col gap-8 lg:flex-row lg:items-center'>
+            <div className='lg:flex-1'>
+              <h1 className='text-h2 text-secondary text-center mb-5 lg:mb-8 lg:text-left min-[1210px]:text-h1'>
+                The Association Of Professional Women Engineers of Nigeria
+                (APWEN)
+              </h1>
+              <p className='text-xl-160 text-black font-medium text-center lg:text-left'>
+                A division of the Nigerian Society of Engineers.
+              </p>
+            </div>
 
-          {/* Hero Image */}
-          {/* <div className='relative w-full h-[331px] rounded-lg overflow-clip lg:h-[594px] lg:flex-1'> */}
-          <div className='relative w-full h-[327px] rounded-lg overflow-clip lg:w-[40vw] lg:h-[40vw] lg:-mr-28'>
-            <Image
-              className='object-cover'
-              src='/assets/event-banner.jpeg'
-              alt=''
-              fill
-            />
+            {/* Hero Image */}
+            {/* <div className='relative w-full h-[331px] rounded-lg overflow-clip lg:h-[594px] lg:flex-1'> */}
+            <div className='relative w-full h-[327px] rounded-lg overflow-clip lg:w-[40vw] lg:h-[40vw] lg:-mr-28'>
+              <Image
+                className='object-cover'
+                src='/assets/event-banner.jpeg'
+                alt=''
+                fill
+              />
+            </div>
           </div>
-        </div>
-
-        <div className='h-32 flex gap-6 justify-between overflow-x-auto snap-x snap-mandatory'>
-          {heroData.map(({ title, date }) => (
-            <HorizontalCard key={title} title={title} date={date} />
-          ))}
+          <div className='h-32 flex gap-6 justify-between overflow-x-auto overflow-clip snap-x snap-mandatory lg:h-40'>
+            {heroData.map(({ title, date }) => (
+              <HorizontalCard key={title} title={title} date={date} />
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className='px-6 py-12 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:py-[100px]'>
-        <div className='mb-8 lg:mb-[50px]'>
-          <h2 className='text-h2 text-secondary'>
-            What’s <span className='text-secondary/20'>New?</span>
-          </h2>
-          <p className='text-md-160 text-secondary'>
-            Don’t miss the new trends
-          </p>
-        </div>
+      <section className='relative py-12 '>
+        {/* Card Background */}
+        <div className='absolute top-0 left-0 w-[49vw] h-[60vw] min-w-[278px] min-h-[440px] max-w-[700px] max-h-[872px] bg-purple-96'></div>
+        {/*  */}
 
-        <div>
-          <div className='grid gap-6 md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-10'>
-            {eventsData.map(({ title, date }) => (
-              <VerticalCard key={title} title={title} date={date} />
-            ))}
+        <div className='z-10 relative px-6 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:py-[100px]'>
+          <div className='mb-8 lg:mb-[50px]'>
+            <h2 className='text-h2 text-secondary'>
+              What’s <span className='text-secondary/20'>New?</span>
+            </h2>
+            <p className='text-md-160 text-secondary'>
+              Don’t miss the new trends
+            </p>
           </div>
 
-          <Link
-            className='block py-4 w-full bg-primary text-md-150 text-white text-center font-bold rounded-lg mt-8 min-[576px]:w-[327px] min-[576px]:mx-auto min-[576px]:mt-12'
-            href='/news'>
-            View more
-          </Link>
+          <div>
+            <div className='grid gap-6 md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-10'>
+              {eventsData.map(({ title, date }) => (
+                <VerticalCard key={title} title={title} date={date} />
+              ))}
+            </div>
+
+            <Link
+              className='block py-4 w-full bg-primary text-md-150 text-white text-center font-bold rounded-lg mt-8 min-[576px]:w-[327px] min-[576px]:mx-auto min-[576px]:mt-12'
+              href='/news'>
+              View more
+            </Link>
+          </div>
         </div>
       </section>
 
