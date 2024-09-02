@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRef, useState } from 'react'
+import { Search } from './Icons'
 
 const NavBar = () => {
   const [menuVisibility, setMenuVisibility] = useState('hidden')
@@ -59,19 +60,7 @@ const NavBar = () => {
 
         {/* Search Icon for Desktop */}
         <div className='hidden md:block text-secondary hover:text-primary'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke-width='2'
-            stroke='currentColor'
-            className='w-6 h-6'>
-            <path
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              d='M21 21l-4.35-4.35M16.65 10.85A5.65 5.65 0 1110.35 4.2a5.65 5.65 0 016.3 6.65z'
-            />
-          </svg>
+          <Search />
         </div>
 
         {/* Hamburger Menu for Mobile */}
