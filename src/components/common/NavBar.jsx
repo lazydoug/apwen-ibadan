@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRef, useState } from 'react'
 
@@ -17,7 +18,16 @@ const NavBar = () => {
     <div className=''>
       <nav className='px-6 py-5 md:px-12 md:py-7 bg-white/40 backdrop-blur-[80px] flex items-center justify-between'>
         {/* Logo */}
-        <div className='text-lg font-bold text-primary'>Logo</div>
+        <div className='text-lg font-bold text-primary'>
+          <Link href='/'>
+            <Image
+              src='/assets/logo.png'
+              alt='APWEN Ibadan logo'
+              width={117}
+              height={28.25}
+            />
+          </Link>
+        </div>
 
         {/* Desktop Menu */}
         <div className='hidden md:flex md:items-center md:space-x-8'>
@@ -31,7 +41,8 @@ const NavBar = () => {
           </Link>
           <Link
             href='/projects'
-            className='text-md text-secondary hover:text-primary'>
+            className='text-md text-secondary
+            hover:text-primary'>
             Projects
           </Link>
           <Link

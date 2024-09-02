@@ -8,7 +8,9 @@ const Footer = () => {
         <div className='max-w-64 mb-7 md:max-w-[288px] min-[576px]:mb-0'>
           <p className='text-lg text-secondary font-bold mb-2'>APWEN Ibadan</p>
           <p className='text-md-160 text-black'>
-            24, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+            Ibadan, <br />
+            Oyo State, <br />
+            Nigeria.
           </p>
         </div>
 
