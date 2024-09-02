@@ -12,31 +12,28 @@ const AboutPage = () => {
             </p>
             <h1 className='text-h2 text-secondary mb-5 min-[1440px]:text-h1 lg:mb-8'>
               The Association of Professional Women Engineers of Nigeria (APWEN)
-              <span className='block text-h1 text-secondary/10 mt-2'>
-                IBADAN
+              <span className='block text-h2 text-secondary/10 mt-2 min-[1440px]:text-h1'>
+                IBADAN CHAPTER
               </span>
             </h1>
 
             <p className='text-md-160 text-black lg:text-xl-160 font-medium'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-              <br /> <br />
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
+              The Association of Professional Women Engineers of Nigeria (APWEN)
+              - Ibadan Chapter aims to promote the inclusion of women in
+              engineering and STEM fields, encouraging diversity and fostering a
+              more inclusive community.
+              <br /> <br /> The chapter is led by <i>Chairman </i>
+              <strong>Engr. Abisola Adabanija</strong>, with a dedicated
+              executive committee including <i>Vice Chairman</i>{' '}
+              <strong>Engr. Yemisi Abidoye</strong>,<i>General Secretary</i>{' '}
+              <strong>Engr. Dr. Mojisola Bolarinwa</strong>, and other key
+              members.
             </p>
           </div>
 
           {/**Hero Image */}
           <div className='relative w-full h-[327px] rounded-lg overflow-clip lg:w-[40vw] lg:h-[40vw] lg:-mr-28'>
-            <Image
-              src='/assets/placeholder.png'
-              alt=''
-              fill
-            />
+            <Image className='object-cover' src='/assets/about-banner.jpg' alt='' fill />
           </div>
         </div>
 
@@ -55,18 +52,17 @@ const AboutPage = () => {
 
         <div className='relative mb-8 lg:mb-16'>
           <p className='text-md-160 text-black flex flex-col gap-8 lg:text-xl-160 lg:font-medium lg:flex-row lg:gap-14'>
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            <span className='flex-1'>
+              <strong>Mission:</strong> To continuously increase awareness that
+              engineering is a career for girls also, thereby improving the
+              numerical strength of female engineers, and to provide a forum for
+              promoting sorority amongst female engineers.
             </span>
 
-            <span>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
+            <span className='flex-1'>
+              <strong>Vision:</strong> To be the catalyst for the advancement of
+              women in the engineering profession towards national and global
+              technological development.
             </span>
           </p>
 
@@ -80,11 +76,11 @@ const AboutPage = () => {
         </div>
 
         <div className='relative w-full h-[18vw] min-h-24 max-h-[260px] rounded-lg overflow-clip'>
-          <Image src='/assets/placeholder.png' alt='' fill />
+          <Image className='object-cover object-center' src='/assets/about-banner-2.jpg' alt='' fill />
         </div>
       </section>
 
-      <section className='px-6 py-12 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:py-[100px]'>
+      <section className='px-6 py-12 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:py-[100px]'>
         <div className='mb-6 flex flex-col gap-6 min-[1120px]:flex-row min-[1120px]:items-center min-[1120px]:mb-20'>
           <div className='min-[1120px]:w-[52vw]'>
             <p className='text-xl-140 text-secondary/50 font-bold mb-2 lg:text-h4 lg:mb-4'>

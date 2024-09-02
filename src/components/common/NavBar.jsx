@@ -40,12 +40,12 @@ const NavBar = () => {
             className='text-md text-secondary hover:text-primary'>
             News
           </Link>
-          <Link
+          {/* <Link
             href='/projects'
             className='text-md text-secondary
             hover:text-primary'>
             Projects
-          </Link>
+          </Link> */}
           <Link
             href='/about'
             className='text-md text-secondary hover:text-primary'>
@@ -101,12 +101,12 @@ const NavBar = () => {
           className='block px-6 py-2 text-md text-secondary hover:text-primary'>
           News
         </Link>
-        <Link
+        {/* <Link
           onClick={() => setMenuVisibility('hidden')}
           href='/projects'
           className='block px-6 py-2 text-md text-secondary hover:text-primary'>
           Projects
-        </Link>
+        </Link> */}
         <Link
           onClick={() => setMenuVisibility('hidden')}
           href='/about'

@@ -47,11 +47,14 @@ export default function Home() {
         <div className='px-6 pt-12 pb-8 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:py-[100px] flex flex-col gap-8 lg:gap-12'>
           <div className='z-10 flex flex-col gap-8 lg:flex-row lg:items-center'>
             <div className='lg:flex-1'>
-              <h1 className='text-h2 text-secondary text-center mb-5 lg:mb-8 lg:text-left min-[1210px]:text-h1'>
-                The Association Of Professional Women Engineers of Nigeria
+              <h1 className='text-h2 text-secondary mb-5 min-[1440px]:text-h1 lg:mb-8'>
+                The Association of Professional Women Engineers of Nigeria
                 (APWEN)
+                <span className='block text-h2 text-secondary/10 mt-2 min-[1440px]:text-h1'>
+                  IBADAN CHAPTER
+                </span>
               </h1>
-              <p className='text-xl-160 text-black font-medium text-center lg:text-left'>
+              <p className='text-xl-160 text-black font-medium lg:text-left'>
                 A division of the Nigerian Society of Engineers.
               </p>
             </div>
@@ -61,7 +64,7 @@ export default function Home() {
             <div className='relative w-full h-[327px] rounded-lg overflow-clip lg:w-[40vw] lg:h-[40vw] lg:-mr-28'>
               <Image
                 className='object-cover'
-                src='/assets/event-banner.jpeg'
+                src='/assets/home-banner.jpg'
                 alt=''
                 fill
               />
@@ -139,14 +142,14 @@ export default function Home() {
                 <div className='relative w-full h-[360px] min-[1440px]:w-[470px] min-[1440px]:h-[512px]'>
                   <Image
                     className='rounded-lg z-10 object-cover'
-                    src='/assets/event-banner.jpeg'
+                    src='/assets/upcoming-event-banner.jpg'
                     alt='Event banner image'
                     fill
                   />
                   <div className='w-[470px] h-[512px] absolute bg-purple-92 left-1 top-1 rounded-lg max-[1440px]:hidden'></div>
 
                   {/**Countdown */}
-                  <div className='w-full max-w-80 px-2 text-grey-500/10 flex justify-between absolute -bottom-9 left-1/2 -translate-x-1/2 z-10 max-[320px]:hidden'>
+                  <div className='w-full max-w-80 px-2 text-grey-50/70 flex justify-between absolute -bottom-9 left-1/2 -translate-x-1/2 z-10 max-[320px]:hidden'>
                     <div className='flex flex-col items-center'>
                       <span className='text-h2'>05</span>
                       <span className='text-xl-160 font-bold'>Days</span>
@@ -190,20 +193,22 @@ export default function Home() {
         className='bg-cover bg-center bg-no-repeat md:bg-fixed'
         style={{
           backgroundImage:
-            'linear-gradient(rgba(36, 10, 23, 0.5), rgba(0, 0, 0, 0.85)), url("/assets/apwen-activity.jpeg")',
+            'linear-gradient(rgba(36, 10, 23, 0.65), rgba(0, 0, 0, 0.9)), url("/assets/about-banner.jpg")',
         }}>
         <div className='px-6 py-12 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:py-[100px]'>
           <h2 className='text-h2 text-purple-96 mb-4'>
             About <span className='text-purple-92/50'>Us</span>
           </h2>
           <p className='text-md-160 text-purple-98 mx-5'>
-            The Association of Professional Women Engineers of Nigeria (APWEN)
-            was formed by a handful of women engineers led by Engr. (Mrs.) J. O.
-            Maduka in 1982 and was formally inaugurated in 1983. It was
-            originally meant to be a pressure group since most men hiring
-            engineers then would rather have women in the kitchen and not on
-            construction sites or behind the desk carrying out engineering
-            designs.
+            The Association of Professional Women Engineers of Nigeria (APWEN) -
+            Ibadan Chapter aims to promote the inclusion of women in engineering
+            and STEM fields, encouraging diversity and fostering a more
+            inclusive community. The chapter is led by <i>Chairman </i>
+            <strong>Engr. Abisola Adabanija</strong>, with a dedicated executive
+            committee including <i>Vice Chairman</i>{' '}
+            <strong>Engr. Yemisi Abidoye</strong>,<i>General Secretary</i>{' '}
+            <strong>Engr. Dr. Mojisola Bolarinwa</strong>, and other key
+            members.
           </p>
           <Link
             className='block py-4 bg-primary text-md-150 text-white text-center font-bold rounded-lg mt-8 min-[576px]:w-[327px] min-[576px]:mx-auto'
