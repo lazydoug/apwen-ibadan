@@ -2,9 +2,81 @@ import TeamMember from '@/components/common/Cards/TeamMember'
 import Image from 'next/image'
 
 const AboutPage = () => {
+  const teamMembers = [
+    {
+      title: 'Engr.',
+      name: 'Abisola Adabanija',
+      position: 'Chairman',
+      about: '',
+      image: '',
+    },
+    {
+      title: 'Engr.',
+      name: 'Yemisi Abidoye',
+      position: 'Vice Chairman',
+      about: '',
+      image: '',
+    },
+    {
+      title: 'Engr. Dr.',
+      name: 'Mojisola Bolarinwa',
+      position: 'General Secretary',
+      about: '',
+      image: '',
+    },
+    {
+      title: 'Engr.',
+      name: 'Adefunke Adeyemo',
+      position: 'Assistant General Secretary',
+      about: '',
+      image: '',
+    },
+    {
+      title: 'Engr.',
+      name: 'Fausat Agboluaje',
+      position: 'Publicity Secretary',
+      about: '',
+      image: '',
+    },
+    {
+      title: 'Engr. Dr.',
+      name: 'Kafayat Ajibola',
+      position: 'Technical Secretary',
+      about: '',
+      image: '',
+    },
+    {
+      title: 'Engr.',
+      name: 'Iyabode Jimoh',
+      position: 'Welfare Secretary',
+      about: '',
+      image: '',
+    },
+    {
+      title: 'Engr.',
+      name: 'Abidat Fasasi-Aleshiloye',
+      position: 'Internal Auditor',
+      about: '',
+      image: '',
+    },
+    {
+      title: 'Engr.',
+      name: 'Zainab Adedoyin',
+      position: 'Financial Secretary',
+      about: '',
+      image: '',
+    },
+    {
+      title: 'Engr.',
+      name: 'Temitope Ayodele',
+      position: 'Treasurer',
+      about: '',
+      image: '',
+    },
+  ]
   return (
     <main className='bg-purple-98'>
-      <section className='px-6 pt-12 pb-3 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:pt-[100px]'>
+      <section className='px-6 pt-12 pb-3 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:pt-[100px]'>
         <div className='flex flex-col lg:flex-row gap-8 lg:items-center'>
           <div className='lg:flex-1'>
             <p className='text-xl-140 text-secondary/50 font-bold mb-6 lg:text-h4'>
@@ -33,7 +105,12 @@ const AboutPage = () => {
 
           {/**Hero Image */}
           <div className='relative w-full h-[327px] rounded-lg overflow-clip lg:w-[40vw] lg:h-[40vw] lg:-mr-28'>
-            <Image className='object-cover' src='/assets/about-banner.jpg' alt='' fill />
+            <Image
+              className='object-cover'
+              src='/assets/about-banner.jpg'
+              alt=''
+              fill
+            />
           </div>
         </div>
 
@@ -76,7 +153,12 @@ const AboutPage = () => {
         </div>
 
         <div className='relative w-full h-[18vw] min-h-24 max-h-[260px] rounded-lg overflow-clip'>
-          <Image className='object-cover object-center' src='/assets/about-banner-2.jpg' alt='' fill />
+          <Image
+            className='object-cover object-center'
+            src='/assets/about-banner-2.jpg'
+            alt=''
+            fill
+          />
         </div>
       </section>
 
@@ -91,10 +173,14 @@ const AboutPage = () => {
             </h2>
 
             <p className='text-md-160 text-secondary lg:text-xl-160 lg:font-medium'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              At APWEN Ibadan, we are dedicated to empowering female engineers
+              by providing opportunities for professional growth and leadership.
+              We advance innovation by fostering a culture that encourages
+              creative solutions and groundbreaking ideas in engineering. Our
+              commitment to championing diversity ensures that women in STEM are
+              not only included but are pivotal in shaping the future of
+              technology and engineering, creating a more inclusive and dynamic
+              community.
             </p>
           </div>
 
@@ -104,35 +190,36 @@ const AboutPage = () => {
         </div>
 
         <div className='flex flex-col gap-8 min-[1120px]:flex-row'>
-          <div className='flex gap-6'>
+          <div className='flex gap-6 flex-1'>
             <div className='relative w-[45px] h-[74px] shrink-0'>
               <Image src='/assets/rocket.png' alt='' fill />
             </div>
             <div>
               <p className='text-md-150 text-secondary font-bold mb-3'>
-                Fast & Strong
+                Resilience
               </p>
               <p className='text-md-160 text-black/50'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Empowering women and girls with the strength and resilience to
+                face challenges head-on, laying a solid foundation in
+                engineering.
               </p>
             </div>
           </div>
-          <div className='flex gap-6'>
+          <div className='flex gap-6 flex-1'>
             <div className='relative w-[45px] h-[42px] shrink-0'>
               <Image src='/assets/bulb.png' alt='' fill />
             </div>
             <div>
               <p className='text-md-150 text-secondary font-bold mb-3'>
-                Creative
+                Innovation
               </p>
               <p className='text-md-160 text-black/50'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                We support women in engineering in exploring new ideas and
+                creating transformative solutions.
               </p>
             </div>
           </div>
-          <div className='flex gap-6'>
+          <div className='flex gap-6 flex-1'>
             <div className='relative w-[45px] h-[49px] shrink-0'>
               <Image src='/assets/brain.png' alt='' fill />
             </div>
@@ -141,15 +228,16 @@ const AboutPage = () => {
                 Critical Thinking
               </p>
               <p className='text-md-160 text-black/50'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Nurturing young girls and female engineers, encouraging a
+                thoughtful, analytical approach to problem-solving and
+                delivering impactful solutions.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className='px-6 py-12 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:py-[100px]'>
+      <section className='px-6 py-12 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:py-[100px]'>
         <div className='mb-8 min-[1120px]:w-[52vw] lg:mb-20'>
           <p className='text-xl-140 text-secondary/50 font-bold mb-2 lg:text-h4 lg:mb-4'>
             BEHIND THE SCENES
@@ -158,21 +246,25 @@ const AboutPage = () => {
             Our Core Team
           </h2>
           <p className='text-md-160 text-black lg:text-xl-160 lg:font-medium'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Meet the dedicated individuals driving our mission forward. Each
+            core team member brings a unique blend of expertise, passion, and
+            commitment, working together to create a supportive and dynamic
+            environment. Their collective experience and dedication to
+            empowering women and girls in engineering form the backbone of our
+            organisation, ensuring impactful and innovative solutions.
           </p>
         </div>
 
         {
           <div className='grid gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4 xl:gap-10'>
-            <TeamMember />
-            <TeamMember />
-            <TeamMember />
-            <TeamMember />
-            <TeamMember />
-            <TeamMember />
-            <TeamMember />
-            <TeamMember />
+            {teamMembers.map(({ title, name, position, about }) => (
+              <TeamMember
+                key={name}
+                name={name}
+                position={position}
+                about={about}
+              />
+            ))}
           </div>
         }
       </section>
