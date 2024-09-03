@@ -36,9 +36,9 @@ const NavBar = () => {
             Home
           </Link>
           <Link
-            href='/news'
+            href='/events'
             className='text-md text-secondary hover:text-primary'>
-            News
+            Events
           </Link>
           {/* <Link
             href='/projects'
@@ -60,7 +60,7 @@ const NavBar = () => {
 
         {/* Search Icon for Desktop */}
         <div className='hidden md:block text-secondary hover:text-primary'>
-          <Search />
+          {/* <Search /> */}
         </div>
 
         {/* Hamburger Menu for Mobile */}
@@ -97,9 +97,9 @@ const NavBar = () => {
         </Link>
         <Link
           onClick={() => setMenuVisibility('hidden')}
-          href='/news'
+          href='/events'
           className='block px-6 py-2 text-md text-secondary hover:text-primary'>
-          News
+          Events
         </Link>
         {/* <Link
           onClick={() => setMenuVisibility('hidden')}

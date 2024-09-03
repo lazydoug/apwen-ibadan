@@ -11,9 +11,11 @@ const ContactPage = () => {
             </h1>
             <div className='flex flex-col gap-4 mb-12 lg:gap-[18px]'>
               <p className='text-md-160 text-black lg:text-xl-160'>
-                Email, call or complete the form to lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua.
+                Email, call, or complete the form to connect with us. Whether
+                you have questions, need support, or are interested in
+                sponsorship opportunities, we’re here to assist. Your engagement
+                is crucial to us in providing the resources and support
+                necessary for women and girls in engineering to thrive.
               </p>
 
               <Link
@@ -35,7 +37,7 @@ const ContactPage = () => {
                 </p>
                 <p className='text-md-160 text-black lg:text-xl-160'>
                   We value your feedback and are continuously working to improve
-                  APWEN (Ibadan). Your input is crucial in shaping our future.
+                  APWEN (Ibadan). Your input is essential in shaping our future.
                 </p>
               </div>
 

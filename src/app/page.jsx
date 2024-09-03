@@ -70,7 +70,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className='h-32 flex gap-6 justify-between overflow-x-auto overflow-clip snap-x snap-mandatory lg:h-40'>
+          <div className='h-32 flex gap-6 justify-between overflow-x-auto overflow-clip snap-x snap-mandatory no-scrollbar lg:h-40'>
             {heroData.map(({ title, date }) => (
               <HorizontalCard key={title} title={title} date={date} />
             ))}

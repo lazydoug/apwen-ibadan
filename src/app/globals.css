@@ -29,14 +29,15 @@ body {
 .content {
   overflow: hidden;
   position: relative;
-    color: red;
+  color: red;
 }
 .content::before {
   background-color: white;
-  background: url('http://www.lausanneworldpulse.com/pdfs/brierley_map_0507.jpg') no-repeat center center;
+  background: url('http://www.lausanneworldpulse.com/pdfs/brierley_map_0507.jpg')
+    no-repeat center center;
   background-size: cover;
   z-index: -3;
-  content: " ";
+  content: ' ';
   position: fixed;
   will-change: transform;
   width: 100%;
@@ -54,5 +55,16 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
