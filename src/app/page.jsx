@@ -6,12 +6,11 @@ import VerticalCard from '@/components/common/Cards/VeritcalCard'
 import { Calendar } from '@/components/common/Icons'
 import Newsletter from '@/components/common/Newsletter'
 
-import eventsData from './data/events'
-import heroData from './data/hero'
+import { newsData } from '@/data/news'
+import eventsData from '../data/events'
+import heroData from '../data/hero'
 
 export default function Home() {
-  const recents = ['', '', '']
-
   return (
     <main className='bg-purple-98'>
       {/* <section className='px-6 pt-12 pb-8 md:px-12 lg:px-40 lg:py-[100px] flex flex-col gap-8'>
@@ -71,9 +70,18 @@ export default function Home() {
             </div>
           </div>
           <div className='h-32 flex gap-6 justify-between overflow-x-auto overflow-clip snap-x snap-mandatory no-scrollbar lg:h-40'>
-            {heroData.map(({ title, date }) => (
-              <HorizontalCard key={title} title={title} date={date} />
-            ))}
+            {newsData
+              .slice(-3)
+              .map(({ title, date, content, slug, bannerImage }) => (
+                <HorizontalCard
+                  key={title}
+                  title={title}
+                  content={content}
+                  image={`/assets/${bannerImage}`}
+                  slug={slug}
+                  date={date}
+                />
+              ))}
           </div>
         </div>
       </section>
