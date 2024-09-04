@@ -15,14 +15,14 @@ const AboutPage = () => {
       name: 'Yemisi Abidoye',
       position: 'Vice Chairman',
       about: '',
-      image: '',
+      image: '/assets/team/vice-chair.jpg',
     },
     {
       title: 'Engr. Dr.',
       name: 'Mojisola Bolarinwa',
       position: 'General Secretary',
       about: '',
-      image: '',
+      image: '/assets/team/sec-gen.jpg',
     },
     {
       title: 'Engr.',
@@ -257,12 +257,14 @@ const AboutPage = () => {
 
         {
           <div className='grid gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4 xl:gap-10'>
-            {teamMembers.map(({ title, name, position, about }) => (
+            {teamMembers.map(({ title, name, position, about, image }) => (
               <TeamMember
                 key={name}
+                title={title}
                 name={name}
                 position={position}
                 about={about}
+                image={image}
               />
             ))}
           </div>

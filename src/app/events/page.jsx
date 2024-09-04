@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Newsletter from '@/components/common/Newsletter'
 import VerticalCard from '@/components/common/Cards/VeritcalCard'
 
-import eventsData from '../data/events'
+import eventsData from '../../data/events'
 
 const EventsPage = () => {
   return (
