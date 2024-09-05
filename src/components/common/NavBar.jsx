@@ -36,6 +36,11 @@ const NavBar = () => {
             Home
           </Link>
           <Link
+            href='/news'
+            className='text-md text-secondary hover:text-primary'>
+            News
+          </Link>
+          <Link
             href='/events'
             className='text-md text-secondary hover:text-primary'>
             Events
@@ -94,6 +99,12 @@ const NavBar = () => {
           href='/'
           className='block px-6 py-2 text-md text-secondary hover:text-primary'>
           Home
+        </Link>
+        <Link
+          onClick={() => setMenuVisibility('hidden')}
+          href='/news'
+          className='block px-6 py-2 text-md text-secondary hover:text-primary'>
+          News
         </Link>
         <Link
           onClick={() => setMenuVisibility('hidden')}

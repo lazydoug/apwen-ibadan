@@ -7,8 +7,7 @@ import { Calendar } from '@/components/common/Icons'
 import Newsletter from '@/components/common/Newsletter'
 
 import { newsData } from '@/data/news'
-import eventsData from '../data/events'
-import heroData from '../data/hero'
+import eventsData from '@/data/events'
 
 export default function Home() {
   return (
@@ -39,7 +38,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className='relative  '>
+      <section className='relative'>
         {/* Card Background */}
         <div className='absolute top-0 right-0 min-w-[278px] min-h-[440px] max-w-[500px] max-h-[730px] bg-purple-96 md:w-[35vw] md:h-[35vw]'></div>
         {/*  */}
@@ -103,8 +102,14 @@ export default function Home() {
 
           <div>
             <div className='grid gap-6 md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-10'>
-              {eventsData.map(({ title, date }) => (
-                <VerticalCard key={title} title={title} date={date} />
+              {newsData.slice(-6).map(({ title, date, bannerImage, slug }) => (
+                <VerticalCard
+                  key={title}
+                  title={title}
+                  date={date}
+                  image={bannerImage}
+                  slug={slug}
+                />
               ))}
             </div>
 

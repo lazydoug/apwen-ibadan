@@ -5,15 +5,16 @@ export const newsData = [
     title: 'APWEN Ibadan Chapter in the Media',
     date: '6th May, 2024',
     content: `The Chairman, Engr. Abisola Adabanija was on a media tour to Broadcasting 
-    Corporation of Oyo State (BCOS), a television station on a mid-morning show on Monday 
-    6th of May, 2024 to talk about Women in Technology. She discussed on issues and 
-    contribution of Women in the area of technology.`,
+    Corporation of Oyo State (<abbr title="Broadcasting Corporation of Oyo State">BCOS</abbr>), 
+    a television station on a mid-morning show on Monday 6th of May, 2024 to talk about Women 
+    in Technology. She discussed on issues and contribution of Women in the area of technology.`,
     bannerImage: 'in-the-media-banner.jpg',
     image1: 'in-the-media-1.jpg',
     image2: 'in-the-media-2.jpg',
     image3: 'in-the-media-3.jpg',
     imageDesc: `The Chairman, APWEN Ibadan Chapter, Engr. Abisola Adabanija with presenters 
-      of Mid–Morning show`,
+    of Mid–Morning show`,
+    tags: 'Women In Tech, Media Tour, Mid Morning Show',
   },
 
   {
@@ -32,6 +33,7 @@ export const newsData = [
     imageDesc: `The APWEN Ibadan Chapter led by her chairman, had the privilege of presenting a 
       goodwill message at the opening of Alao-Akala Road commissioned by His Excellency, 
       the Executive Governor of Oyo State, Engr. Oluseyi Makinde.`,
+    tags: 'Construction Assessment, Infrastructure Development',
   },
 
   {
@@ -61,5 +63,6 @@ export const newsData = [
     image3: 'road-commisioning-3.jpg',
     imageDesc:
       'The APWEN Ibadan Chapter led by her chairman, had the privilege of presenting a goodwill message at the opening of Alao-Akala Road commissioned by His Excellency, the Executive Governor of Oyo State, Engr. Oluseyi Makinde.',
+    tags: 'Road Commissioning, Regional Development, Infrastructure Milestone',
   },
 ]
