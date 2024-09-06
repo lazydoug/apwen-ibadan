@@ -10,6 +10,8 @@ import { newsData } from '@/data/news'
 import eventsData from '@/data/events'
 
 export default function Home() {
+  const [{ title, date, details, slug }] = eventsData.slice(-1)
+
   return (
     <main className='bg-purple-98'>
       {/* <section className='px-6 pt-12 pb-8 md:px-12 lg:px-40 lg:py-[100px] flex flex-col gap-8'>
@@ -135,19 +137,21 @@ export default function Home() {
                 <div className='flex gap-3 items-center mb-3 min-[1440px]:mb-8'>
                   <Calendar color='rgb(104 4 55 / 0.5)' />
                   <span className='text-lg font-bold text-secondary/50'>
-                    {eventsData[4].date}
+                    {date}
                   </span>
                 </div>
 
-                <Link className='block mb-5 min-[1440px]:mb-12' href={'#'}>
+                <Link
+                  href={`/events/${slug}`}
+                  className='block mb-5 min-[1440px]:mb-12'>
                   <h3 className='text-h3 text-secondary hover:text-primary min-[1440px]:text-h2'>
-                    {eventsData[4].title}
+                    {title}
                   </h3>
                 </Link>
 
-                <p className='text-xl-160 text-black/60 font-medium'>
-                  {eventsData[4].details}
-                </p>
+                <p
+                  className='text-xl-160 text-black/60 font-medium line-clamp-[7]'
+                  dangerouslySetInnerHTML={{ __html: details }}></p>
               </div>
 
               {/**Thumbnail */}
@@ -155,24 +159,24 @@ export default function Home() {
                 <div className='relative w-full h-[360px] min-[1440px]:w-[470px] min-[1440px]:h-[512px]'>
                   <Image
                     className='rounded-lg z-10 object-cover'
-                    src='/assets/upcoming-event-banner.jpg'
+                    src='/assets/placeholder.png'
                     alt='Event banner image'
                     fill
                   />
-                  <div className='w-[470px] h-[512px] absolute bg-purple-92 left-1 top-1 rounded-lg max-[1440px]:hidden'></div>
+                  <div className='w-[470px] h-[512px] absolute bg-purple-92 left-1 top-1 rounded-lg max-[1439px]:hidden'></div>
 
                   {/**Countdown */}
                   <div className='w-full max-w-80 px-2 text-grey-50/70 flex justify-between absolute -bottom-9 left-1/2 -translate-x-1/2 z-10 max-[320px]:hidden'>
                     <div className='flex flex-col items-center'>
-                      <span className='text-h2'>05</span>
+                      <span className='text-h2'>00</span>
                       <span className='text-xl-160 font-bold'>Days</span>
                     </div>
                     <div className='flex flex-col items-center'>
-                      <span className='text-h2'>20</span>
+                      <span className='text-h2'>00</span>
                       <span className='text-xl-160 font-bold'>Hours</span>
                     </div>
                     <div className='flex flex-col items-center'>
-                      <span className='text-h2'>10</span>
+                      <span className='text-h2'>00</span>
                       <span className='text-xl-160 font-bold'>Mins</span>
                     </div>
                     <div className='flex flex-col items-center'>

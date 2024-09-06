@@ -27,8 +27,8 @@ const VerticalCard = ({ date, image, title, slug }) => {
 
   return (
     <div className='w-full bg-white rounded-lg overflow-clip basis-0 grow'>
-      <Link href={`/news/${slug}`}>
-        <div className='relative w-full h-80'>
+      <Link href={slug}>
+        <div className='relative w-full h-80 overflow-clip'>
           <Image
             className='object-cover hover:scale-125 transition-all ease-in-out duration-500'
             src={`/assets/${image}`}
@@ -47,7 +47,7 @@ const VerticalCard = ({ date, image, title, slug }) => {
         </div>
 
         <Link
-          href={`/news/${slug}`}
+          href={slug}
           className='text-black text-md-150 font-bold line-clamp-2 mb-4 text-wrap hover:text-primary'>
           {/* <p className='h-24 text-black text-xl-160 font-bold line-clamp-3'> */}
           {title ||

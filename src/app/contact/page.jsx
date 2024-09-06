@@ -6,7 +6,7 @@ const ContactPage = () => {
       <section className='px-6 py-12 bg-purple-94 md:px-12 lg:px-40 lg:py-[100px]'>
         <div className='flex flex-col gap-12 min-[1120px]:flex-row min-[1120px]:items-center'>
           <div className='lg:flex-1'>
-            <h1 className='text-h2 text-black mb-3 lg:text-h1 lg:mb-6'>
+            <h1 className='text-h2 text-secondary mb-3 lg:text-h1 lg:mb-6'>
               Contact Us
             </h1>
             <div className='flex flex-col gap-4 mb-12 lg:gap-[18px]'>
@@ -16,6 +16,10 @@ const ContactPage = () => {
                 sponsorship opportunities, we’re here to assist. Your engagement
                 is crucial to us in providing the resources and support
                 necessary for women and girls in engineering to thrive.
+              </p>
+
+              <p>
+               
               </p>
 
               <Link

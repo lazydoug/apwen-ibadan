@@ -30,10 +30,8 @@ export const newsData = [
     image1: 'ogbomosho-iseyin-1.jpg',
     image2: 'ogbomosho-iseyin-2.jpg',
     image3: 'ogbomosho-iseyin-3.jpg',
-    imageDesc: `The APWEN Ibadan Chapter led by her chairman, had the privilege of presenting a 
-      goodwill message at the opening of Alao-Akala Road commissioned by His Excellency, 
-      the Executive Governor of Oyo State, Engr. Oluseyi Makinde.`,
-    tags: 'Construction Assessment, Infrastructure Development',
+    imageDesc: `APWEN Ibadan chapter delegates with Contractors and Client representatives 
+    at a section of Ogbomosho-Iseyin Road`,
   },
 
   {

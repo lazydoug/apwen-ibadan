@@ -14,12 +14,22 @@ const EventsPage = () => {
         </h1>
 
         <div className='relative w-full h-[32vw] min-h-36 max-h-[460px] rounded-lg overflow-clip mb-12 lg:mb-[60px]'>
-          <Image className='object-cover' src='/assets/event-banner.jpg' alt='International Day of Girls in ICT ' fill />
+          <Image
+            className='object-cover'
+            src='/assets/event-banner.jpg'
+            alt='International Day of Girls in ICT '
+            fill
+          />
         </div>
 
         <div className='grid gap-6 md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-10'>
-          {eventsData.map(({ title, date }) => (
-            <VerticalCard key={title} title={title} date={date} />
+          {eventsData.map(({ title, date, slug }) => (
+            <VerticalCard
+              key={title}
+              title={title}
+              date={date}
+              slug={`/events/${slug}`}
+            />
           ))}
         </div>
       </section>
