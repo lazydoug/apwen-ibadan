@@ -18,12 +18,12 @@ const ProjectsPage = () => {
         <div className='grid gap-6 md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-10'>
           {
             <>
+              {/* <VerticalCard />
               <VerticalCard />
               <VerticalCard />
               <VerticalCard />
               <VerticalCard />
-              <VerticalCard />
-              <VerticalCard />
+              <VerticalCard /> */}
             </>
           }
         </div>
