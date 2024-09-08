@@ -24,7 +24,7 @@ const NewsPage = () => {
               title={title}
               date={date}
               image={bannerImage}
-              slug={`/news/${slug}`}
+              href={`/news/${slug}`}
             />
           ))}
         </div>
