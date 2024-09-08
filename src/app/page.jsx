@@ -7,7 +7,7 @@ import { Calendar } from '@/components/common/Icons'
 import Newsletter from '@/components/common/Newsletter'
 
 import { newsData } from '@/data/news'
-import eventsData from '@/data/events'
+import { eventsData } from '@/data/events'
 
 export default function Home() {
   const [{ title, date, details, slug }] = eventsData.slice(-1)
@@ -79,7 +79,7 @@ export default function Home() {
                   title={title}
                   content={content}
                   image={`/assets/${bannerImage}`}
-                  slug={slug}
+                  href={`/news/${slug}`}
                   date={date}
                 />
               ))}
@@ -110,7 +110,7 @@ export default function Home() {
                   title={title}
                   date={date}
                   image={bannerImage}
-                  slug={slug}
+                  href={`/news/${slug}`}
                 />
               ))}
             </div>

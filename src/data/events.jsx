@@ -1,4 +1,4 @@
-const events = [
+export const eventsData = [
   {
     id: 'e1',
     slug: 'monthly-general-meeting-january-2024',
@@ -197,5 +197,3 @@ Adeogun.<sup>[2]</sup> Group Photograph.<sup>[3]</sup>`,
     imageDesc: ``,
   },
 ]
-
-export default events

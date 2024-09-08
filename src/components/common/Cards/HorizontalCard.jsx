@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const HorizontalCard = ({ date, image, title, content, slug }) => {
+const HorizontalCard = ({ date, image, title, content, href }) => {
   const currentDate = new Date(Date.now())
 
   const monthYear = new Date(Date.now())
@@ -38,7 +38,7 @@ const HorizontalCard = ({ date, image, title, content, slug }) => {
   return (
     <div className='w-full flex gap-3 items-center md:w-1/2 lg:w-1/3 flex-shrink-0 snap-start'>
       <div className='relative'>
-        <Link href={`/news/${slug}`}>
+        <Link href={href}>
           <div className='relative w-[120px] h-[120px] rounded-lg overflow-clip z-10'>
             <Image
               className='object-cover hover:scale-125 transition-all ease-in-out duration-500'
@@ -53,7 +53,7 @@ const HorizontalCard = ({ date, image, title, content, slug }) => {
 
       <div>
         <Link
-          href={`/news/${slug}`}
+          href={href}
           className='text-black text-md-150 font-bold line-clamp-2 mb-4 text-wrap hover:text-primary'>
           {title ||
             'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'}
