@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const VerticalCard = ({ date, image, title, slug }) => {
+const VerticalCard = ({ date, image, title, href }) => {
   const currentDate = new Date(Date.now())
 
   const month = currentDate.toLocaleDateString('en-GB', {
@@ -27,7 +27,7 @@ const VerticalCard = ({ date, image, title, slug }) => {
 
   return (
     <div className='w-full bg-white rounded-lg overflow-clip basis-0 grow'>
-      <Link href={slug}>
+      <Link href={href}>
         <div className='relative w-full h-80 overflow-clip'>
           <Image
             className='object-cover hover:scale-125 transition-all ease-in-out duration-500'
@@ -47,7 +47,7 @@ const VerticalCard = ({ date, image, title, slug }) => {
         </div>
 
         <Link
-          href={slug}
+          href={href}
           className='text-black text-md-150 font-bold line-clamp-2 mb-4 text-wrap hover:text-primary'>
           {/* <p className='h-24 text-black text-xl-160 font-bold line-clamp-3'> */}
           {title ||

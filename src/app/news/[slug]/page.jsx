@@ -43,7 +43,7 @@ const SingleNewsPage = ({ params: { slug } }) => {
           <article className='mt-4'>
             <h1 className='text-h3 text-black mb-8 lg:text-h2'>{title}</h1>
             <p
-              className='text-md-160 text-black'
+              className='text-md-160 text-black lg:text-xl-160'
               dangerouslySetInnerHTML={{ __html: content }}></p>
 
             <figure className='w-min mx-auto mt-7 lg:my-12'>

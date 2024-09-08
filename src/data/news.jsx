@@ -1,5 +1,35 @@
 export const newsData = [
   {
+    id: 'n3',
+    slug: 'the-commissioning-of-the-76-78KM-alao-akala-road',
+    title: 'The Commissioning of the 76.78KM Alao Akala Road',
+    date: '3rd May, 2024',
+    content: `On Thursday 30th May, 2024, 76.78km Adebayo Alao-Akala memorial Expressway 
+      was officially opened. The ceremony took place on a section of the Road in Ogbomosho, 
+      Oyo State. The Road is aimed at facilitating free movement and link Ogbomoso/Iseyin 
+      together of people and goods. This remarkable achievement marks a significant milestone 
+      in the development of the region, enhancing connectivity, fostering economic growth, and 
+      mproving the quality of life for the people. Amongst the dignitaries at the event was 
+      Nigerian’s Vice President, His Excellency, Alh. Kashim Shettima, GCON, who represented 
+      President Bola Ahmed Tinubu, GCFR. The Chairman APWEN Ibadan Chapter, Engr. Abisola 
+      Adabanija gave her goodwill message, stating the role of female engineers and women in 
+      society in driving progress and innovations; leveraging skills and expertise towards 
+      contributing meaningfully to the development of our communities. In appreciation, she 
+      extended her profound gratitude to President Bola Ahmed Tinubu, GCFR and Governor of Oyo 
+      State, Engr. Oluseyi Abiodun Makinde, FNSE for making another history in constructing 
+      nd commissioning the Road. The Technical secretary, APWEN Ibadan Chapter, Engr. Dr. 
+      Kafayat Ajibola and other APWEN members from Ibadan and Ogbomosho Chapter were also 
+      in attendance.`,
+    bannerImage: 'road-commisioning-banner.jpg',
+    image1: 'road-commisioning-1.jpg',
+    image2: 'road-commisioning-2.jpg',
+    image3: 'road-commisioning-3.jpg',
+    imageDesc:
+      'The APWEN Ibadan Chapter led by her chairman, had the privilege of presenting a goodwill message at the opening of Alao-Akala Road commissioned by His Excellency, the Executive Governor of Oyo State, Engr. Oluseyi Makinde.',
+    tags: 'Road Commissioning, Regional Development, Infrastructure Milestone',
+  },
+
+  {
     id: 'n1',
     slug: 'apwen-ibadan-chapter-in-the-media',
     title: 'APWEN Ibadan Chapter in the Media',
@@ -32,35 +62,5 @@ export const newsData = [
     image3: 'ogbomosho-iseyin-3.jpg',
     imageDesc: `APWEN Ibadan chapter delegates with Contractors and Client representatives 
     at a section of Ogbomosho-Iseyin Road`,
-  },
-
-  {
-    id: 'n3',
-    slug: 'the-commissioning-of-the-76-78KM-alao-akala-road',
-    title: 'The Commissioning of the 76.78KM Alao Akala Road',
-    date: '3rd May, 2024',
-    content: `On Thursday 30th May, 2024, 76.78km Adebayo Alao-Akala memorial Expressway 
-    was officially opened. The ceremony took place on a section of the Road in Ogbomosho, 
-    Oyo State. The Road is aimed at facilitating free movement and link Ogbomoso/Iseyin 
-    together of people and goods. This remarkable achievement marks a significant milestone 
-    in the development of the region, enhancing connectivity, fostering economic growth, and 
-    mproving the quality of life for the people. Amongst the dignitaries at the event was 
-    Nigerian’s Vice President, His Excellency, Alh. Kashim Shettima, GCON, who represented 
-    President Bola Ahmed Tinubu, GCFR. The Chairman APWEN Ibadan Chapter, Engr. Abisola 
-    Adabanija gave her goodwill message, stating the role of female engineers and women in 
-    society in driving progress and innovations; leveraging skills and expertise towards 
-    contributing meaningfully to the development of our communities. In appreciation, she 
-    extended her profound gratitude to President Bola Ahmed Tinubu, GCFR and Governor of Oyo 
-    State, Engr. Oluseyi Abiodun Makinde, FNSE for making another history in constructing 
-    nd commissioning the Road. The Technical secretary, APWEN Ibadan Chapter, Engr. Dr. 
-    Kafayat Ajibola and other APWEN members from Ibadan and Ogbomosho Chapter were also 
-    in attendance.`,
-    bannerImage: 'road-commisioning-banner.jpg',
-    image1: 'road-commisioning-1.jpg',
-    image2: 'road-commisioning-2.jpg',
-    image3: 'road-commisioning-3.jpg',
-    imageDesc:
-      'The APWEN Ibadan Chapter led by her chairman, had the privilege of presenting a goodwill message at the opening of Alao-Akala Road commissioned by His Excellency, the Executive Governor of Oyo State, Engr. Oluseyi Makinde.',
-    tags: 'Road Commissioning, Regional Development, Infrastructure Milestone',
   },
 ]
