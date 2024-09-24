@@ -8,49 +8,52 @@ const AboutPage = () => {
       name: 'Abisola Adabanija',
       position: 'Chairman',
       about: '',
-      image: '',
+      image: 'chairman.jpg',
     },
     {
       title: 'Engr.',
       name: 'Yemisi Abidoye',
       position: 'Vice Chairman',
       about: '',
-      image: '/assets/team/vice-chair.jpg',
+      image: 'vice-chair.jpg',
     },
     {
       title: 'Engr. Dr.',
       name: 'Mojisola Bolarinwa',
       position: 'General Secretary',
-      about: '',
-      image: '/assets/team/sec-gen.jpg',
+      about:
+        'B.Sc. OAU, Ife (Mat. Sc. & Engrg.), M.Sc. UI, Ibadan (Ind. & Prod. Engr.), Ph.D UI, Ibadan (Production/Manufacturing). SAP Certified.',
+      image: 'sec-gen.jpg',
     },
     {
       title: 'Engr.',
-      name: 'Adefunke Adeyemo',
+      name: 'Adefunke Aina Adeyemo',
       position: 'Assistant General Secretary',
-      about: '',
-      image: '',
+      about: 'Electrical Engineer (Power system).',
+      image: 'asst-sec-gen.jpg',
     },
     {
       title: 'Engr.',
       name: 'Fausat Agboluaje',
       position: 'Publicity Secretary',
       about: '',
-      image: '',
+      image: 'pub-sec.jpg',
     },
     {
       title: 'Engr. Dr.',
-      name: 'Kafayat Ajibola',
+      name: 'Abolanle Kafayat Ajibola',
       position: 'Technical Secretary',
-      about: '',
-      image: '',
+      about:
+        'BTech. Chemical Engineering;  MSc. Industrial and Production;   PhD. Wood Product Engineering.',
+      image: 'tech-sec.jpg',
     },
     {
       title: 'Engr.',
       name: 'Iyabode Jimoh',
       position: 'Welfare Secretary',
-      about: '',
-      image: '',
+      about:
+        'B.Sc. Agricultural Engineering, University of Ilorin (Soil & Water).',
+      image: 'welfare-sec.jpg',
     },
     {
       title: 'Engr.',
@@ -61,19 +64,27 @@ const AboutPage = () => {
     },
     {
       title: 'Engr.',
-      name: 'Zainab Adedoyin',
+      name: 'Abiola Zainab Adedoyin',
       position: 'Financial Secretary',
-      about: '',
-      image: '',
+      about: 'Civil Engineer (Geotechnics).',
+      image: 'fin-sec.jpg',
     },
     {
       title: 'Engr.',
-      name: 'Temitope Ayodele',
+      name: 'Temitope Oluwatoyin Ayodele',
       position: 'Treasurer',
+      about: 'Civil Engineer (Geotechnical & Foundation Engineering).',
+      image: 'treasurer.jpg',
+    },
+    {
+      title: 'Engr. Dr.',
+      name: 'Adenike Kolawole',
+      position: 'Immediate Past Chairman (IPC)',
       about: '',
-      image: '',
+      image: 'ipc.jpg',
     },
   ]
+
   return (
     <main className='bg-purple-98'>
       <section className='px-6 pt-12 pb-3 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:pt-[100px]'>
@@ -264,7 +275,7 @@ const AboutPage = () => {
                 name={name}
                 position={position}
                 about={about}
-                image={image}
+                image={`/assets/team/${image}`}
               />
             ))}
           </div>

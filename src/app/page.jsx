@@ -159,8 +159,8 @@ export default function Home() {
                 <div className='relative w-full h-[360px] min-[1440px]:w-[470px] min-[1440px]:h-[512px]'>
                   <Image
                     className='rounded-lg z-10 object-cover'
-                    src='/assets/placeholder.png'
-                    alt='Event banner image'
+                    src='/assets/upcoming-event-banner.gif'
+                    alt='Upcoming event banner'
                     fill
                   />
                   <div className='w-[470px] h-[512px] absolute bg-purple-92 left-1 top-1 rounded-lg max-[1439px]:hidden'></div>
