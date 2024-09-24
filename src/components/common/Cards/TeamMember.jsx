@@ -16,12 +16,9 @@ const TeamMember = ({ title, name, position, about, image }) => {
           <span className='font-light'>{title} </span> {name || 'Lorem Ipsum'}
         </p>
         <p className='text-sm font-medium text-secondary/50 mb-3 lg:text-md-150'>
-          {position || 'Consectetur'}
+          {position}
         </p>
-        <p className='text-md-160 text-black'>
-          {about ||
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
-        </p>
+        <p className='text-md-160 text-black'>{about}</p>
       </div>
     </div>
   )
