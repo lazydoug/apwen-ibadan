@@ -159,7 +159,7 @@ export default function Home() {
                 <div className='relative w-full h-[360px] min-[1440px]:w-[470px] min-[1440px]:h-[512px]'>
                   <Image
                     className='rounded-lg z-10 object-cover'
-                    src='/assets/upcoming-event-banner.gif'
+                    src='/assets/inauguration-group-photo.jpg'
                     alt='Upcoming event banner'
                     fill
                   />
@@ -189,12 +189,12 @@ export default function Home() {
             </div>
 
             {/** View more button visible on large screens */}
-            <Link
+            {/* <Link
               className='absolute right-12 bottom-[100px] text-md-150 text-secondary font-bold max-[1440px]:hidden'
               href='/events'>
               View more
               <hr className='w-[30px] border-[3px] border-white mt-1' />
-            </Link>
+            </Link> */}
           </div>
 
           {/** View more button only visible on small screens */}
