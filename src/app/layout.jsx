@@ -18,12 +18,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={`${plusJakartaSans.className} bg-purple-98 min-w-80`}>
-        <SpeedInsights />
         <header>
           <NavBar />
         </header>
         {children}
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   )
