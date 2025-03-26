@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import PSPDFKit from 'pspdfkit'
 
 const IWDBrochure = () => {
   const containerRef = useRef(null)
@@ -12,32 +11,38 @@ const IWDBrochure = () => {
   }, [])
 
   useEffect(() => {
-    if (isClient) {
-      const container = containerRef.current
+    if (!isClient) return // Ensure client-side execution
 
-      if (container && typeof window !== 'undefined') {
-        import('pspdfkit').then(PSPDFKit => {
+    const container = containerRef.current
+
+    if (container && typeof window !== 'undefined') {
+      import('pspdfkit')
+        .then(PSPDFKit => {
           if (PSPDFKit) {
             PSPDFKit.unload(container)
           }
 
-          const initialViewState = new PSPDFKit.ViewState({
-            readOnly: true,
-          })
+          if (container) {
+            PSPDFKit.unload(container)
 
-          PSPDFKit.load({
-            container,
-            document: '/docs/iwd-brochure.pdf',
-            baseUrl: `${window.location.protocol}//${window.location.host}/`,
-            initialViewState,
-          })
+            PSPDFKit.load({
+              container,
+              document: '/docs/iwd-brochure.pdf',
+              baseUrl: `${window.location.protocol}//${window.location.host}/`,
+              initialViewState: new PSPDFKit.ViewState({
+                readOnly: true,
+              }),
+            })
+          }
         })
-      }
+        .catch(error => {
+          console.error('Error loading PSPDFKit:', error)
+        })
     }
   }, [isClient])
 
   if (!isClient) {
-    return null // Prevents rendering on the server
+    return null // Avoid rendering on the server
   }
 
   return <div ref={containerRef} style={{ height: '100vh' }} />
