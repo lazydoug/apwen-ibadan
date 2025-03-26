@@ -1,15 +1,11 @@
 'use client'
- 
+
 import { useEffect, useRef, useState } from 'react'
 import PSPDFKit from 'pspdfkit'
 
 const IWDBrochure = () => {
   const containerRef = useRef(null)
   const [isClient, setIsClient] = useState(false)
-
-  const initialViewState = new PSPDFKit.ViewState({
-    readOnly: true,
-  })
 
   useEffect(() => {
     setIsClient(true)
@@ -24,6 +20,10 @@ const IWDBrochure = () => {
           if (PSPDFKit) {
             PSPDFKit.unload(container)
           }
+
+          const initialViewState = new PSPDFKit.ViewState({
+            readOnly: true,
+          })
 
           PSPDFKit.load({
             container,
