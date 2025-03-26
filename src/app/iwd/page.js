@@ -37,7 +37,7 @@ const IWDBrochure = () => {
   }, [isClient])
 
   if (!isClient) {
-    return null // Prevents rendering on the server.
+    return null // Prevents rendering on the server
   }
 
   return <div ref={containerRef} style={{ height: '100vh' }} />
