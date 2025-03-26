@@ -6,45 +6,23 @@ import VerticalCard from '@/components/common/Cards/VeritcalCard'
 import { Calendar } from '@/components/common/Icons'
 import Newsletter from '@/components/common/Newsletter'
 
-import { newsData } from '@/data/news'
-import { eventsData } from '@/data/events'
+import { getPostSlice } from '../helpers/sanityClient'
 
-export default function Home() {
+import { eventsData } from '@/data/events'
+import { imgUrl } from '@/helpers/generateImageUrl'
+
+const Home = async () => {
+  const posts = await getPostSlice(6)
+
   const [{ title, date, details, slug }] = eventsData.slice(-1)
 
   return (
     <main className='bg-purple-98'>
-      {/* <section className='px-6 pt-12 pb-8 md:px-12 lg:px-40 lg:py-[100px] flex flex-col gap-8'>
-        <div className='flex flex-col gap-8 lg:flex-row '>
-          <div className='flex-grow'>
-            <h1 className='text-h2 text-secondary text-center mb-5 lg:text-left lg:text-h1 lg:flex-1'>
-              The Association Of Professional Women Engineers of Nigeria (APWEN)
-            </h1>
-            <p className='text-xl-160 text-black font-medium text-center lg:text-left'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-          </div>
-
-          <div className='relative w-full h-[331px] rounded-lg overflow-clip lg:h-[594px] lg:flex-1'>
-            <Image src='/assets/placeholder.png' alt='' fill />
-          </div>
-        </div>
-
-        <div className='flex gap-6'>
-          {recents.map(() => (
-            // <div key={''} className='w-full flex flex-col gap-8 flex-none'>
-            <HorizontalCard key={''} />
-            // </div>
-          ))}
-        </div>
-      </section> */}
-
       <section className='relative'>
         {/* Card Background */}
         <div className='absolute top-0 right-0 min-w-[278px] min-h-[440px] max-w-[500px] max-h-[730px] bg-purple-96 md:w-[35vw] md:h-[35vw]'></div>
         {/*  */}
-        <div className='px-6 pt-12 pb-8 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:py-[100px] flex flex-col gap-8 lg:gap-12'>
+        <div className='px-6 pt-12 pb-8 min-[576px]:w-[540px] min-[576px]:px-0 min-[576px]:mx-auto md:w-full md:px-12 lg:px-40 lg:pt-[50px] lg:pb-[100px] flex flex-col gap-8 lg:gap-12'>
           <div className='z-10 flex flex-col gap-8 lg:flex-row lg:items-center'>
             <div className='lg:flex-1'>
               <h1 className='text-h2 text-secondary mb-5 min-[1440px]:text-h1 lg:mb-8'>
@@ -60,27 +38,25 @@ export default function Home() {
             </div>
 
             {/* Hero Image */}
-            {/* <div className='relative w-full h-[331px] rounded-lg overflow-clip lg:h-[594px] lg:flex-1'> */}
-            <div className='relative w-full h-[327px] rounded-lg overflow-clip lg:w-[40vw] lg:h-[40vw] lg:-mr-28'>
+            <div className='relative w-full h-[327px] rounded-lg overflow-clip lg:w-[40vw] lg:h-[35vw] lg:-mr-28'>
               <Image
                 className='object-cover'
-                src='/assets/home-banner.jpg'
+                src={imgUrl(posts[0].mainImage).url()}
                 alt=''
                 fill
               />
             </div>
           </div>
           <div className='h-32 flex gap-6 justify-between overflow-x-auto overflow-clip snap-x snap-mandatory no-scrollbar lg:h-40'>
-            {newsData
-              .slice(-3)
-              .map(({ title, date, content, slug, bannerImage }) => (
+            {posts
+              .slice(0, 3)
+              .map(({ title, publishedAt, slug, mainImage }) => (
                 <HorizontalCard
-                  key={title}
+                  key={slug.current}
                   title={title}
-                  content={content}
-                  image={`/assets/${bannerImage}`}
-                  href={`/news/${slug}`}
-                  date={date}
+                  image={imgUrl(mainImage).url()}
+                  href={`/news/${slug.current}`}
+                  date={publishedAt}
                 />
               ))}
           </div>
@@ -104,13 +80,13 @@ export default function Home() {
 
           <div>
             <div className='grid gap-6 md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-10'>
-              {newsData.slice(-6).map(({ title, date, bannerImage, slug }) => (
+              {posts.map(({ title, publishedAt, mainImage, slug }) => (
                 <VerticalCard
-                  key={title}
+                  key={slug.current}
                   title={title}
-                  date={date}
-                  image={bannerImage}
-                  href={`/news/${slug}`}
+                  date={publishedAt}
+                  image={imgUrl(mainImage).url()}
+                  href={`/news/${slug.current}`}
                 />
               ))}
             </div>
@@ -188,7 +164,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/** View more button visible on large screens */}
+            {/* 
+            // * View more button visible on large screens
+             */}
             {/* <Link
               className='absolute right-12 bottom-[100px] text-md-150 text-secondary font-bold max-[1440px]:hidden'
               href='/events'>
@@ -239,3 +217,5 @@ export default function Home() {
     </main>
   )
 }
+
+export default Home

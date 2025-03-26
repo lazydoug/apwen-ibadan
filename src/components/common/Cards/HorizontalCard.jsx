@@ -1,38 +1,14 @@
+import { shortDateFormatter } from '@/helpers/dateFormatter'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const HorizontalCard = ({ date, image, title, content, href }) => {
-  const currentDate = new Date(Date.now())
-
-  const monthYear = new Date(Date.now())
-    .toLocaleDateString('en-GB', {
-      month: 'short',
-      year: 'numeric',
-    })
-    .split(' ')
-    .join(', ')
-
-  const ordinalDate = (function (d) {
-    if (d > 3 && d < 21) return `${d}th`
-
-    switch (d % 10) {
-      case 1:
-        return `${d}st`
-      case 2:
-        return `${d}nd`
-      case 3:
-        return `${d}rd`
-      default:
-        return `${d}th`
-    }
-  })(currentDate.getDate())
-
+const HorizontalCard = ({ date, image, title, href }) => {
   image || (image = '/assets/placeholder.png')
 
   {
     /* calculating the avg read time per minute */
   }
-  const words = content.split(' ')
+  const words = 0
   const readTime = Math.floor(words.length / 238)
 
   return (
@@ -60,7 +36,7 @@ const HorizontalCard = ({ date, image, title, content, href }) => {
         </Link>
         <div className='flex flex-row gap-[10px] items-center'>
           <p className='text-xs text-grey-400 font-medium'>
-            {date || `${ordinalDate} ${monthYear}`}
+            {shortDateFormatter.format(new Date(date))}
           </p>
 
           <span className='w-1 h-1 bg-grey-500 rounded-full'></span>
