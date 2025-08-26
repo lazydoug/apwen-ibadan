@@ -3,7 +3,7 @@ export const newsData = [
     id: 'n3',
     slug: 'the-commissioning-of-the-76-78KM-alao-akala-road',
     title: 'The Commissioning of the 76.78KM Alao Akala Road',
-    date: '3rd May, 2024',
+    date: '3 May 2024',
     content: `On Thursday 30th May, 2024, 76.78km Adebayo Alao-Akala memorial Expressway 
       was officially opened. The ceremony took place on a section of the Road in Ogbomosho, 
       Oyo State. The Road is aimed at facilitating free movement and link Ogbomoso/Iseyin 
@@ -33,7 +33,7 @@ export const newsData = [
     id: 'n1',
     slug: 'apwen-ibadan-chapter-in-the-media',
     title: 'APWEN Ibadan Chapter in the Media',
-    date: '6th May, 2024',
+    date: '6 May 2024',
     content: `The Chairman, Engr. Abisola Adabanija was on a media tour to Broadcasting 
     Corporation of Oyo State (<abbr title="Broadcasting Corporation of Oyo State">BCOS</abbr>), 
     a television station on a mid-morning show on Monday 6th of May, 2024 to talk about Women 
@@ -51,7 +51,7 @@ export const newsData = [
     id: 'n2',
     slug: 'technical-visit-apwen-ibadan-chapter-visits-ogbomosho-iseyin-road',
     title: 'Technical Visit: APWEN Ibadan Chapter Visits Ogbomosho-Iseyin Road',
-    date: '9th May, 2024',
+    date: '9 May 2024',
     content: `On Thursday, 9th of May, 2024 members of APWEN Ibadan Chapter led by the 
     Chairman, Engr. Abisola Adabanija visited a section of Ogbomosho-Iseyin Road to 
     assess its ongoing construction works. The members were welcomed by the contractor 

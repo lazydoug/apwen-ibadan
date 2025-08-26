@@ -48,17 +48,9 @@ const Home = async () => {
             </div>
           </div>
           <div className='h-32 flex gap-6 justify-between overflow-x-auto overflow-clip snap-x snap-mandatory no-scrollbar lg:h-40'>
-            {posts
-              .slice(0, 3)
-              .map(({ title, publishedAt, slug, mainImage }) => (
-                <HorizontalCard
-                  key={slug.current}
-                  title={title}
-                  image={imgUrl(mainImage).url()}
-                  href={`/news/${slug.current}`}
-                  date={publishedAt}
-                />
-              ))}
+            {posts.slice(0, 3).map(post => (
+              <HorizontalCard key={slug.current} post={post} />
+            ))}
           </div>
         </div>
       </section>
