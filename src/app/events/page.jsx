@@ -27,7 +27,7 @@ const EventsPage = () => {
             <VerticalCard
               key={title}
               title={title}
-              date={date}
+              date={Date.now()}
               href={`/events/${slug}`}
             />
           ))}
