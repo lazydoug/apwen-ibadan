@@ -49,7 +49,7 @@ const Home = async () => {
           </div>
           <div className='h-32 flex gap-6 justify-between overflow-x-auto overflow-clip snap-x snap-mandatory no-scrollbar lg:h-40'>
             {posts.slice(0, 3).map(post => (
-              <HorizontalCard key={slug.current} post={post} />
+              <HorizontalCard key={post.slug.current} post={post} />
             ))}
           </div>
         </div>
