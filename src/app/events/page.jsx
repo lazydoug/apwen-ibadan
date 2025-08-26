@@ -17,7 +17,7 @@ const EventsPage = () => {
           <Image
             className='object-cover'
             src='/assets/event-banner.jpg'
-            alt='International Day of Girls in ICT '
+            alt='International Day of Girls in ICT'
             fill
           />
         </div>

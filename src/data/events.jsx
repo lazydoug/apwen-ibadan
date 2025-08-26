@@ -3,7 +3,7 @@ export const eventsData = [
     id: 'e1',
     slug: 'monthly-general-meeting-january-2024',
     title: 'Monthly General Meeting - January 2024',
-    date: '30th January, 2024',
+    date: '30 January 2024',
     details: `The APWEN Ibadan Chapter kicked off the year with a virtual general meeting on 
       January 30th. Members gathered online via Zoom to discuss the chapter's plans and 
       activities for the upcoming months. This meeting set the tone for a year filled 
@@ -19,7 +19,7 @@ export const eventsData = [
     id: 'e2',
     slug: 'monthly-general-meeting-february-2024',
     title: 'Monthly General Meeting - February 2024',
-    date: '29th February, 2024',
+    date: '29th February 2024',
     details: `On February 29th, the chapter held a physical general meeting at the Management 
     Information Centre office of the Governor, Oyo State Secretariat, Ibadan. This meeting 
     also provided an online access option for members who couldn't attend in person. The 
@@ -35,7 +35,7 @@ export const eventsData = [
     id: 'e3',
     slug: 'executive-committee-elections',
     title: 'Executive Committee Elections',
-    date: '8th March, 2024',
+    date: '8th March 2024',
     details: `March was a busy month for the APWEN Ibadan Chapter. On March 8th, the chapter 
     conducted elections for new executive positions. Members cast their votes electronically, 
     and the results were announced promptly. The new executive committee includes:
@@ -83,7 +83,7 @@ export const eventsData = [
     id: 'e4',
     slug: '2024-world-water-day',
     title: '2024 World Water Day',
-    date: '22nd March, 2024',
+    date: '22 March 2024',
     details: `On March 22nd, the chapter participated in the World Water Day celebration 
     organized by the Oyo State steering committee. The event included the commissioning 
     of a borehole at The Polytechnic, Ibadan Quarters, and a public lecture on "Technology 
@@ -103,7 +103,7 @@ export const eventsData = [
     slug: 'international-women’s-day-celebration-international-day-of-girls-in-ict',
     title:
       'International Women’s Day Celebration International Day of Girls in ICT ',
-    date: '22nd March, 2024',
+    date: '22 March 2024',
     details: `The Day aims to celebrate and promote the inclusion of girls in
                 science, Technology, Engineering and Mathematic field. Also to
                 seek breakdown barriers, encourage diversity, and foster a more
@@ -142,7 +142,7 @@ export const eventsData = [
     id: 'e6',
     slug: 'international-womens-day',
     title: "International Women's Day",
-    date: '26th March, 2024',
+    date: '26 March 2024',
     details: `Every March 8, the world celebrate Women. In a bid to
                 commemorate the day, APWEN Ibadan Chapter organized an event to
                 forge a more inclusive world for women, with the theme
@@ -181,7 +181,7 @@ Adeogun.<sup>[2]</sup> Group Photograph.<sup>[3]</sup>`,
     id: 'e7',
     slug: 'inauguration-of-newly-elected-executives',
     title: 'Inauguration of Newly Elected Executives',
-    date: '12th October, 2024',
+    date: '12 October 2024',
     details: `On October 12th, the APWEN Ibadan Chapter will host the <strong>Inauguration of 
     Newly Elected Executives</strong> at the prestigious International Conference Centre, 
     University of Ibadan. This significant event follows the chapter's election held earlier 

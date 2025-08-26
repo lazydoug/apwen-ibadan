@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "@portabletext/react": "^3.2.0",
-    "@sanity/client": "^6.24.1",
+    "@sanity/client": "^6.29.1",
     "@sanity/image-url": "^1.1.0",
+    "@vercel/speed-insights": "^1.2.0",
     "next": "14.2.5",
     "next-sanity": "^9.8.27",
     "pspdfkit": "^2024.8.2",

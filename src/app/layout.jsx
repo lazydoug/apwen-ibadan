@@ -1,3 +1,5 @@
+import { SpeedInsights } from '@vercel/speed-insights/next'
+
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 
@@ -21,6 +23,7 @@ export default function RootLayout({ children }) {
         </header>
         {children}
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   )
